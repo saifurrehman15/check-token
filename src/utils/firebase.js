@@ -20,10 +20,10 @@ const site_key = "6LfSlaUsAAAAAJkJ39iKK-IVJGw69mPxoy17ACtq";
 let appCheck = null;
 if (typeof window !== 'undefined') {
   // Localhost ke liye debug mode
-  if (window.location.hostname === "localhost") {
-    self.FIREBASE_APPCHECK_DEBUG_TOKEN = true;
-    console.log("🔧 Debug mode enabled for localhost");
-  }
+//   if (window.location.hostname === "localhost") {
+//     self.FIREBASE_APPCHECK_DEBUG_TOKEN = true;
+//     console.log("🔧 Debug mode enabled for localhost");
+//   }
   
   appCheck = initializeAppCheck(app, {
     provider: new ReCaptchaV3Provider(site_key),
