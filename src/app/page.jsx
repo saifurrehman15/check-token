@@ -29,6 +29,7 @@ export default function Home() {
         setStatus("❌ Error: " + error.message);
       }
     };
+    
 
     getAppCheckToken();
   }, []);
